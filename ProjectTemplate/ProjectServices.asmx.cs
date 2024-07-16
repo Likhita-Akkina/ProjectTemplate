@@ -62,5 +62,10 @@ namespace ProjectTemplate
 				return "Something went wrong, please check your credentials and db name and try again.  Error: "+e.Message;
 			}
 		}
+
+		[WebMethod]
+		public int getANumber(int baseNumber){
+			return baseNumber + 42;
+		}
 	}
 }
